@@ -16,40 +16,9 @@ remove tumblr sign up controls
 <html>
 
 <head>
-    <Title>{Title}</Title>
+    <Title>Rachel W. Yen</Title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
-    <meta name="text:Marquee" content="Welcome to my site! It is a constant work-in-progress. Just like everything and everyone in life."/>
-    <meta name="text:Spotify" content="https://open.spotify.com/artist/6Crds2fHISKu5I7xBIWRfW"/>
-    <meta name="text:Apple Music" content="https://music.apple.com/sg/artist/yen-oc%C3%A9ane/1644568569?app=music"/>
-    <meta name="text:Songwhip" content="https://yenoceane.crd.co"/>
-    <meta name="text:YouTube" content="rachelwyen"/>
-    <meta name="text:SoundCloud" content="yenoceane"/>
-    <meta name="image:Hero image" content="https://64.media.tumblr.com/27c55feb9adb5efbd6000f66ce13e718/206819551856dc75-1b/s2048x3072/45d7154d5a6cb7a2538e5012ef1999c4a69617bb.png">
-    
-    <meta name="select:Body Font" content="'Press Start 2P'" title="'Press Start 2P'"/>
-    <meta name="select:Body Font" content="'Jersey 15'" title="'Jersey 15'"/>
-    <meta name="select:Body Font" content="Montserrat Alternates" />
-<meta name="select:Body Font" content="Libre Baskerville" title="Libre Baskerville"/>
-<meta name="select:Body Font" content="Lora" title="Lora"/>
-<meta name="select:Body Font" content="Spectral" title="Spectral"/>
-<meta name="select:Body Font" content="PT Serif" title="PT Serif"/>
-<meta name="select:Body Font" content="Lato" title="Lato"/>
-<meta name="select:Body Font" content="Open Sans" title="Open Sans"/>
-<meta name="select:Body Font" content="Source Sans Pro" title="Source Sans Pro"/>
-
-    <meta name="color:Background" content="#367b6b" />
-    <meta name="color:Body text" content="#b22b5a" />
-    <meta name="color:Link text" content="#a24db0" />
-    <meta name="color:Title text" content="#fff" />
-    <meta name="color:Marquee background" content ="#cb2f66" />
-    <meta name="color:Image background" content="#cb2f66"/>
-    <meta name="color:Marquee text" content="#fff"/>
-    <meta name="color:Box background" content="#fff" />
-    <meta name="color:Button background" content="#a24db0"/>
-    <meta name="color:Footer background" content="#b22b5a"/>
-
 
 <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -87,16 +56,16 @@ function myFunction() {
 <style type="text/css">
     
 body {
-    background-color: {color:Background}; /*background of the whole page*/
-    color: {color:Body text}; /*body text*/;
+    background-color: #367b6b; /*background of the whole page*/
+    color: #b22b5a; /*body text*/;
     padding: 20px;
-    font-family: {select:Body Font}, Courier, monospace;
+    font-family: 'Jersey 15', Courier, monospace;
     font-size: 10vw;
     text-shadow: 0 1px 0 rgba(0,0,0,0.1);
 }
 
 a:link, a:active, a:visited {
-    color: {color:Link text};
+    color: #a24db0;
     text-decoration: none;
     -moz-transition-duration: 0.5s;
 	-o-transition-duration: 0.5s;
@@ -105,37 +74,17 @@ a:link, a:active, a:visited {
 }
 
 a:hover {
-    color: {color:Background};
+    color: #367b6b;
     -moz-transition-duration: 0.5s;
 	-o-transition-duration: 0.5s;
 	-webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;
 }
 
-.tmblr-iframe--unified-controls, .tmblr-iframe--loaded { display: none; }
-
-/*To remove that tumblr edit helper box*/
-.iframe-controls-container.desktop-iframe-controls-container {
-   display: none !important;
-}
- 
-.tmblr-signup-promo, /* generic signup promo */
-.tumblr-signup-prompt, /* sometimes used */
-#signup_promo_container, /* older id */
-.tmblr-header-signup, /* header sign-up prompt */
-.tmblr-header-login {  /* header login prompt */
-    display: none !important;
-} 
- 
-/*To remove that tumblr follow me*/
-.tmblr-iframe–controls.iframe-controls–desktop, .tmblr-iframe–mobile-loggedin-controls.iframe-controls–desktop {
-  display: none;
-}
-
 #s-m-t-tooltip { /*Link hover*/
-    background-color: {color:Marquee background};
+    background-color: #cb2f66;
     color: #fff;
-    font-family: {select:Body Font}, Courier, monospace;
+    font-family: 'Jersey 15', Courier, monospace;
     font-size: 20px;
     margin: 10px;
     padding: 5px;
@@ -149,7 +98,7 @@ a:hover {
 }
 
 #title {
-  color: {color:Title text};
+  color: #fff;
   text-align: center;
   font-size: clamp(9vw, 14vw, 100px);
   line-height: 1.3;
@@ -160,13 +109,12 @@ a:hover {
   word-break: normal;
   white-space: normal;
   display: block;
-  letter-spacing: 0.05em; /* improves spacing */
+  letter-spacing: 0.05em;
 }
 
 .word {
-  /* prevent breaking inside a word */
-  display: inline-block;  /* important: inline-block groups the word */
-  white-space: nowrap;    /* prevent breaking inside the word */
+  display: inline-block;
+  white-space: nowrap;
   margin-right: 0.25em;
 }
 
@@ -175,16 +123,9 @@ a:hover {
   animation: bounceOnce 1s ease forwards;
 }
 
- /*shake animation
- 
- #title:hover {
-    animation: shake 0.7s;
-    animation-iteration-count: 1;
-} */
-
 #marquee {
-    background-color: {color:Marquee background};
-    color: {color:Marquee text};
+    background-color: #cb2f66;
+    color: #fff;
     padding: 20px;
     width: 100%;
     font-size: 36px;
@@ -207,7 +148,7 @@ a:hover {
 }
 
 #box {
-    background-color: {color:Box background};
+    background-color: #fff;
     padding: 20px;
     width: 100%;
     text-align: center;
@@ -231,7 +172,7 @@ a:hover {
 }
 
 #hero {
-    background: {color:Image background};
+    background: #cb2f66;
     padding: 20px;
     border-radius: 20px;
     display: inline-block;
@@ -239,8 +180,8 @@ a:hover {
     width: fit-content;
     max-width: 400px;
    box-shadow:
-    6px 6px 0 rgba(18, 66, 54, 0.35),   /* toned-down green */
-    10px 10px 10px rgba(18, 66, 54, 0.15); /* subtle glow */
+    6px 6px 0 rgba(18, 66, 54, 0.35),
+    10px 10px 10px rgba(18, 66, 54, 0.15);
 }
 
 #hero img {
@@ -274,21 +215,21 @@ a:hover {
 }
 
 #buttons {
-    background-color: {color:Button background};
+    background-color: #a24db0;
     padding: 10px 20px;
     border-radius: 20px;
     box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.25),
                 12px 12px 0 rgba(0, 0, 0, 0.1);
     font-size: clamp(18px, 4vw, 28px);
     text-align: center;
-    flex: 0 0 auto; /* Don't grow or shrink */
+    flex: 0 0 auto;
     max-width: 300px;
-    width: 100%; /* Make buttons uniform width */
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto; /* Let content determine height */
+    height: auto;
 }
 
 #buttons:hover {
@@ -297,7 +238,7 @@ a:hover {
 }
 
 #buttons a {
-    color: {color:Marquee text};
+    color: #fff;
     text-decoration: none;
     display: flex;
     flex-wrap: nowrap;
@@ -322,21 +263,21 @@ a:hover {
 }
 
 #buttons2 {
-    background-color: {color:Marquee background};
+    background-color: #cb2f66;
     padding: 10px 20px;
     border-radius: 20px;
     box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.25),
                 12px 12px 0 rgba(0, 0, 0, 0.1);
     font-size: clamp(18px, 4vw, 28px);
     text-align: center;
-    flex: 0 0 auto; /* Don't grow or shrink */
+    flex: 0 0 auto;
     max-width: 300px;
-    width: 100%; /* Make buttons uniform width */
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto; /* Let content determine height */
+    height: auto;
 }
 
 #buttons2:hover {
@@ -345,7 +286,7 @@ a:hover {
 }
 
 #buttons2 a {
-    color: {color:Marquee text};
+    color: #fff;
     text-decoration: none;
     display: flex;
     flex-wrap: nowrap;
@@ -375,7 +316,7 @@ h2 {
 
 #sns {
     margin-top: 5px;
-    color: {color:Background};
+    color: #367b6b;
     font-size: 16px;
 }
 
@@ -388,7 +329,7 @@ h2 {
     width: 40px;
 }
 
-#sns img:hover { /* ref: w3schools shake animation */
+#sns img:hover {
     animation: shake 0.7s;
     animation-iteration-count: 1;
 }
@@ -407,15 +348,15 @@ h2 {
 }
 
 #stuff {
-    background-color: {color:Footer background};
+    background-color: #b22b5a;
     text-align: center;
     color: #fff;
     padding: 20px;
     margin-top: 20px;
     border-radius: 20px;
     box-shadow:
-    6px 6px 0 rgba(18, 66, 54, 0.35),   /* toned-down green */
-    10px 10px 10px rgba(18, 66, 54, 0.15); /* subtle glow */
+    6px 6px 0 rgba(18, 66, 54, 0.35),
+    10px 10px 10px rgba(18, 66, 54, 0.15);
 }
 
 #stuff h1 {
@@ -428,7 +369,7 @@ h2 {
 }
 
 #stuff a:link {
-    color: {color:Marquee text};
+    color: #fff;
 }
 
 #stuff img {
@@ -462,7 +403,6 @@ tr:after {
     clear: both;
 }
 
-/* Popup container - can be anything you want */
 .popup {
   position: relative;
   display: inline-block;
@@ -473,12 +413,11 @@ tr:after {
   user-select: none;
 }
 
-/* The actual popup */
 .popup .popuptext {
   visibility: hidden;
   opacity: 0;
   width: 160px;
-  background-color: {color:Marquee background};
+  background-color: #cb2f66;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -491,7 +430,6 @@ tr:after {
   transition: opacity 0.5s ease;
 }
 
-/* Popup arrow */
 .popup .popuptext::after {
   content: "";
   position: absolute;
@@ -500,22 +438,19 @@ tr:after {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: {color:Marquee background} transparent transparent transparent;
+  border-color: #cb2f66 transparent transparent transparent;
 }
 
-/* Show popup with fade-in */
 .popup .show {
   visibility: visible;
   opacity: 1;
   animation: fadeIn 0.5s forwards;
 }
 
-/* Add fadeOut animation */
 .popup .fadeOut {
   animation: fadeOut 0.5s forwards;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -532,9 +467,9 @@ tr:after {
     }
     
     .word {
-    display: block;  /* Make each word take a full line */
-    white-space: nowrap;  /* prevent word break */
-    margin-bottom: 0 auto 0.2em; /* optional spacing between words */
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 0 auto 0.2em;
   }
     
     .hero-bio-wrap {
@@ -697,7 +632,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const originalText = titleEl.textContent.trim();
 
   function animateTitle() {
-    titleEl.textContent = ""; // Clear existing content
+    titleEl.textContent = "";
 
     const words = originalText.split(" ");
 
@@ -714,13 +649,12 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       titleEl.appendChild(wordSpan);
-      titleEl.appendChild(document.createTextNode(" ")); // add space between words
+      titleEl.appendChild(document.createTextNode(" "));
     });
   }
 
   animateTitle();
 
-  // Re-trigger every 15 seconds
   setInterval(() => {
     titleEl.innerHTML = "";
     animateTitle();
@@ -737,9 +671,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <!-- TITLE -->
-<div id="title">{Title}</div>
+<div id="title">Rachel W. Yen</div>
 
-<div id="marquee"><marquee>{text:Marquee}</marquee></div>
+<div id="marquee"><marquee>Welcome to my site! It is a constant work-in-progress. Just like everything and everyone in life.</marquee></div>
 
 
 <!-- BIG BOX -->
@@ -748,7 +682,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- SOCIALS -->
     
     <div class="hero-bio-wrap">
-    <div id="hero"><img src="{image:Hero image}"> </div>
+    <div id="hero"><img src="https://64.media.tumblr.com/27c55feb9adb5efbd6000f66ce13e718/206819551856dc75-1b/s2048x3072/45d7154d5a6cb7a2538e5012ef1999c4a69617bb.png"> </div>
     <div id="bio">{Description}
 </div>
 </div>
@@ -784,11 +718,11 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="sns">
     <p>
     
-    <a title="YouTube" href="https://youtube.com/@{text:YouTube}" target="_blank"><img src="https://img.icons8.com/doodle/48/000000/youtube-play.png"></a>
-    <a title="SoundCloud" href="https://soundcloud.com/{text:SoundCloud}" target="_blank"><img src="https://img.icons8.com/doodle/50/000000/soundcloud.png"></a>   
-    <a title="Listening Links" href="{text:Songwhip}" target="_blank"><img src="https://img.icons8.com/?size=100&id=81175&format=png&color=000000"></a> 
-    <a title="Spotify" href="{text:Spotify}" target="_blank"><img src="https://img.icons8.com/?size=100&id=vR7IePJZt06j&format=png&color=000000"></a>
-    <a title="Apple Music" href="{text:Apple Music}" target="_blank"><img src="https://img.icons8.com/?size=100&id=VwNtH5f7bWpg&format=png&color=000000"></a>
+    <a title="YouTube" href="https://youtube.com/@rachelwyen" target="_blank"><img src="https://img.icons8.com/doodle/48/000000/youtube-play.png"></a>
+    <a title="SoundCloud" href="https://soundcloud.com/yenoceane" target="_blank"><img src="https://img.icons8.com/doodle/50/000000/soundcloud.png"></a>   
+    <a title="Listening Links" href="https://yenoceane.crd.co" target="_blank"><img src="https://img.icons8.com/?size=100&id=81175&format=png&color=000000"></a> 
+    <a title="Spotify" href="https://open.spotify.com/artist/6Crds2fHISKu5I7xBIWRfW" target="_blank"><img src="https://img.icons8.com/?size=100&id=vR7IePJZt06j&format=png&color=000000"></a>
+    <a title="Apple Music" href="https://music.apple.com/sg/artist/yen-oc%C3%A9ane/1644568569?app=music" target="_blank"><img src="https://img.icons8.com/?size=100&id=VwNtH5f7bWpg&format=png&color=000000"></a>
     </p>
 </div>
 
