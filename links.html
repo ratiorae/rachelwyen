@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+(ง'̀-'́)ง
+COPYRIGHT: RACHEL W.YEN 2025 // @ratiorae
+
+TEMPORARY PAGE
+-->
+<html>
+
+<head>
+    <title>Links — RACHEL W.YEN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="@rachelwyen elsewhere on the web">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg:         #367b6b;
+            --marquee-bg: #cb2f66;
+            --button-bg:  #a24db0;
+            --box-bg:     #fff;
+            --font-main:  'Jersey 15', Courier, monospace;
+            --shadow-dark: rgba(0, 0, 0, 0.25);
+            --shadow-darker: rgba(0, 0, 0, 0.1);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+        }
+
+        .links-wrap {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Title box — dashed border like the Carrd version but in site colours */
+        .links-title-box {
+            border: 3px dashed var(--marquee-bg);
+            border-radius: 20px;
+            padding: 30px 20px;
+            margin-bottom: 40px;
+        }
+
+        .links-name {
+            color: #fff;
+            font-size: clamp(32px, 8vw, 64px);
+            margin: 0;
+            letter-spacing: 0.05em;
+            line-height: 1.2;
+        }
+
+        /* Icon row */
+        .icon-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 30px;
+            border: 3px dashed var(--marquee-bg);
+            border-radius: 20px;
+            padding: 30px 20px;
+        }
+
+        .icon-btn {
+            background-color: var(--marquee-bg);
+            border-radius: 50%; /* circular buttons */
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 4px 4px 0 var(--shadow-dark),
+                        8px 8px 0 var(--shadow-darker);
+            transition: transform 0.2s;
+            text-decoration: none;
+        }
+
+        .icon-btn:hover {
+            animation: shake 0.7s;
+            animation-iteration-count: 1;
+        }
+
+        .icon-btn img {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Website button */
+        .website-btn {
+            background-color: var(--button-bg);
+            color: #fff;
+            border-radius: 20px;
+            padding: 16px 30px;
+            font-size: clamp(18px, 4vw, 26px);
+            font-family: var(--font-main);
+            box-shadow: 6px 6px 0 var(--shadow-dark),
+                        10px 10px 0 var(--shadow-darker);
+            text-decoration: none;
+            display: inline-block;
+            letter-spacing: 0.05em;
+        }
+
+        .website-btn:hover {
+            animation: shake 0.7s;
+            animation-iteration-count: 1;
+        }
+
+      .website-btn:link, .website-btn:visited {
+    color: #fff;
+}
+
+        .links-footer {
+            margin-top: 30px;
+            color: rgba(255,255,255,0.4);
+            font-size: 14px;
+        }
+
+        @keyframes shake {
+            0%  { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+
+        @media screen and (max-width: 480px) {
+            .icon-btn {
+                width: 64px;
+                height: 64px;
+            }
+            .icon-btn img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="links-wrap">
+
+        <!-- TITLE BOX -->
+        <div class="links-title-box">
+            <p class="links-name">RACHEL'S<br>SOCIAL LINKS</p>
+        </div>
+
+        <!-- ICON ROW -->
+        <div class="icon-row">
+            <a class="icon-btn" href="https://instagram.com/ratiorae" target="_blank" title="Instagram">
+                <img src="https://img.icons8.com/doodle/48/000000/instagram-new.png" alt="Instagram">
+            </a>
+            <a class="icon-btn" href="https://goldsundrops.substack.com/" target="_blank" title="Substack">
+                <img src="https://img.icons8.com/?size=100&id=ZRJAyzp5nMPb&format=png&color=000000" alt="Substack">
+            </a>
+            <a class="icon-btn" href="https://www.youtube.com/@rachelwyen" target="_blank" title="YouTube">
+                <img src="https://img.icons8.com/doodle/48/000000/youtube-play.png" alt="YouTube">
+            </a>
+            <a class="icon-btn" href="https://buymeacoffee.com/ratiorae" target="_blank" title="Buy Me A Coffee">
+                <img src="https://img.icons8.com/doodle/48/000000/coffee-to-go.png" alt="Buy Me A Coffee">
+            </a>
+            <a class="icon-btn" href="https://linkedin.com/in/rachelwyen" target="_blank" title="LinkedIn">
+                <img src="https://img.icons8.com/doodle/48/000000/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+
+        <!-- WEBSITE BUTTON -->
+        <a class="website-btn" href="https://rachelwyen.com">← MY WEBSITE</a>
+
+    </div>
+</body>
+
+</html>
